@@ -1,82 +1,82 @@
-// - создать 5 объектов. В каждом объекте не менее 3х полей. Все объекты разные по набору полей. (Т.е поле name  должно присутствовать только 1 раз в одном объекте )
+// 1 - создать 5 объектов. В каждом объекте не менее 3х полей. Все объекты разные по набору полей. (Т.е поле name  должно присутствовать только 1 раз в одном объекте )
 
-let worker = {
-    occupation: 'builder',
-    experience: '5',
-    position: 'senior'
-};
-let teacher = {
-    subject: 'math',
-    degree: 'PhD',
-    university: 'NULP'
-};
-let apple = {
-    color: 'green',
-    weight: '200 g',
-    price: '10'
-};
-let university = {
-    city: 'Lviv',
-    status: 'National',
-    students: 50000
-};
-let student = {
-    name: 'Andriy',
-    major: 'history',
-    year: 3
-};
+// let worker = {
+//     occupation: 'builder',
+//     experience: '5',
+//     position: 'senior'
+// };
+// let teacher = {
+//     subject: 'math',
+//     degree: 'PhD',
+//     university: 'NULP'
+// };
+// let apple = {
+//     color: 'green',
+//     weight: '200 g',
+//     price: '10'
+// };
+// let university = {
+//     city: 'Lviv',
+//     status: 'National',
+//     students: 50000
+// };
+// let student = {
+//     name: 'Andriy',
+//     major: 'history',
+//     year: 3
+// };
 
-// - создать 5 объектов с полностью разным набором полей. В каждом объекте должен присутсвовать массив и внутренний объект. Опишите что угодно, машину, картину, болт... Пример : let man = { name: 'kokos', skills : ['java','js'] , wife: { name: 'cherry' } };
+// 2 - создать 5 объектов с полностью разным набором полей. В каждом объекте должен присутсвовать массив и внутренний объект. Опишите что угодно, машину, картину, болт... Пример : let man = { name: 'kokos', skills : ['java','js'] , wife: { name: 'cherry' } };
 
-let car = {
-    brand: 'Audi',
-    engine: ['petrol', 'electric'],
-    collaboration: {
-        sound: 'Harman Kardon',
-        screen: 'Samsung'
-    }
-};
+// let car = {
+//     brand: 'Audi',
+//     engine: ['petrol', 'electric'],
+//     collaboration: {
+//         sound: 'Harman Kardon',
+//         screen: 'Samsung'
+//     }
+// };
+//
+// let flat = {
+//     city: 'Lviv',
+//     rooms: ['kitchen', 'living room', 'bedroom'],
+//     dimensions: {
+//         height: 2.3,
+//         length: 6,
+//         wight: 8
+//     }
+// };
+//
+// let book = {
+//     title: 'Harry Potter',
+//     author: 'J.K. Rowling',
+//     characters: ['Harry Potter', 'Ron Weasley', 'Hermione Granger'],
+//     physical: {
+//         pages: 250,
+//         thickness: 1.44,
+//         weight: 0.34
+//     }
+// };
+// let dog = {
+//     name: 'Rexar',
+//     gender: 'male',
+//     breed: ['shepherd', 'retriever'],
+//     condition: {
+//         age: 5,
+//         vaccination: 'all'
+//     }
+// };
+// let developer = {
+//     company: 'EPAM',
+//     skills: ['java', 'js'],
+//     project: {
+//         client: 'ABTO Software',
+//         budget: 25000,
+//         lead: 'Anton'
+//     }
+// };
 
-let flat = {
-    city: 'Lviv',
-    rooms: ['kitchen', 'living room', 'bedroom'],
-    dimensions: {
-        height: 2.3,
-        length: 6,
-        wight: 8
-    }
-};
-
-let book = {
-    title: 'Harry Potter',
-    author: 'J.K. Rowling',
-    characters: ['Harry Potter', 'Ron Weasley', 'Hermione Granger'],
-    physical: {
-        pages: 250,
-        thickness: 1.44,
-        weight: 0.34
-    }
-};
-let dog = {
-    name: 'Rexar',
-    gender: 'male',
-    breed: ['shepherd', 'retriever'],
-    condition: {
-        age: 5,
-        vaccination: 'all'
-    }
-};
-let developer = {
-    company: 'EPAM',
-    skills: ['java', 'js'],
-    project: {
-        client: 'ABTO Software',
-        budget: 25000,
-        lead: 'Anton'
-    }
-};
-
-// - При помощи for in вывести все ключи всех объектов из задания 1 и 2
+// 3 - При помощи for in вывести все ключи всех объектов из задания 1 и 2
 
 // for (const workerKey in worker) {
 //     console.log(workerKey);
@@ -108,7 +108,8 @@ let developer = {
 // for (const developerKey in developer) {
 //     console.log(developerKey);
 // }
-// - При помощи Object.keys вывести все ключи всех объектов из задания 1 и 2
+
+// 4 - При помощи Object.keys вывести все ключи всех объектов из задания 1 и 2
 
 // console.log(Object.keys(worker))
 // console.log(Object.keys(teacher))
@@ -121,21 +122,170 @@ let developer = {
 // console.log(Object.keys(dog))
 // console.log(Object.keys(developer))
 
-// - Создать массив из 10 объектов cars и заполнить его машинами с полями модель, год выпуска, мощность, цвет. (Значаения полей могу быть выдуманными)
-// - Создать массив объектов cities и заполнить его объектами с полями название, популяция, страна, регион. (Значаения полей могу быть выдуманными)
-// - Создать массив объектов cars и заполнить его машинами с полями модель, год выпуска, мощность, цвет, водитель. Водитель является отдельным объектом с полями имя, возраст, пол, стаж.
-// - проитерировать каждый массив из задания 5,6,7 при помощи while.
-// - проитерировать каждый массив из задания 5,6,7 при помощи for .
-// - проитерировать каждый массив из задания 5,6,7 при помощи  for of.
-// - взять объекты из задания 1 и превратить каждый в json.
-// - взять json из задания 11 и превратить их обратно в объекты.
-// - взять массив из задания 5,в цикле перебрать его объекты превратив их в json .
-// - взять массив из задания 6,в цикле перебрать его объекты превратив их в json .
-// - взять массив из задания 7,в цикле перебрать его объекты превратив их в json и сразу скоприовать в новый массив.
-// - Создать массив пользователей. У каждого пользователя обязательно должено быть поле skills которое является массивом. Проитерировать массив пользователей и в каждом пользователе проитерировать его массив skills
-// - Создать массив пользователей. У каждого пользователя обязательно должено быть поле skills которое является массивом. Проитерировать массив пользователей и в каждом пользователе проитерировать его массив skills. Скопировать все skills всех пользователей в отедльный массив
+// 5 - Создать массив из 10 объектов cars и заполнить его машинами с полями модель, год выпуска, мощность, цвет. (Значаения полей могу быть выдуманными)
+
+// let cars = [
+//     car1 = {model: 'tesla', year: 2019, power: 400, color: 'black'},
+//     car2 = {model: 'fait', year: 2016, power: 140, color: 'blue'},
+//     car3 = {model: 'WV', year: 2013, power: 450, color: 'grey'},
+//     car4 = {model: 'Suzuki', year: 2011, power: 200, color: 'brown'},
+//     car5 = {model: 'Toyota', year: 2010, power: 500, color: 'yellow'},
+//     car6 = {model: 'Nissan', year: 2020, power: 100, color: 'red'},
+//     car7 = {model: 'Mazda', year: 2015, power: 120, color: 'purple'},
+//     car8 = {model: 'SEAT', year: 2018, power: 800, color: 'white'},
+//     car9 = {model: 'Porsche', year: 2019, power: 430, color: 'cream'},
+//     car10 = {model: 'Infiniti', year: 2012, power: 480, color: 'green'},
+// ]
+
+// 6 - Создать массив объектов cities и заполнить его объектами с полями название, популяция, страна, регион. (Значаения полей могу быть выдуманными)
+
+// let cities=[
+//     city1={title: 'Kyiv', population: 1.2, country: 'UA', region: 'Europe'},
+//     city1={title: 'Madrid', population: 4.2, country: 'ES', region: 'Europe'},
+//     city1={title: 'Paris', population: 3.5, country: 'FR', region: 'Europe'},
+//     city1={title: 'London', population: 5.2, country: 'GB', region: 'Europe'},
+//     city1={title: 'Lviv', population: 1, country: 'UA', region: 'Europe'},
+//     city1={title: 'New York', population: 12, country: 'US', region: 'America'},
+//     city1={title: 'Detroit', population: 7, country: 'US', region: 'America'},
+//     city1={title: 'Moscow', population: 7.5, country: 'RU', region: 'Europe'},
+//     city1={title: 'Berlin', population: 5, country: 'DE', region: 'Europe'},
+//     city1={title: 'Tokyo', population: 15, country: 'JP', region: 'Asia'}
+// ]
+
+// 7 - Создать массив объектов cars и заполнить его машинами с полями модель, год выпуска, мощность, цвет, водитель. Водитель является отдельным объектом с полями имя, возраст, пол, стаж.
+
+// let cars1 = [
+//     car1 = {model: 'tesla', year: 2019, power: 400, color: 'black', driver:{name: 'Ivan', age: 20, gender: 'male', exp: 4 }},
+//     car2 = {model: 'fait', year: 2016, power: 140, color: 'blue', driver:{name: 'Anton', age: 25, gender: 'male', exp: 8 }},
+//     car3 = {model: 'WV', year: 2013, power: 450, color: 'grey', driver:{name: 'Alina', age: 29, gender: 'female', exp: 2 }},
+//     car4 = {model: 'Suzuki', year: 2011, power: 200, color: 'brown', driver:{name: 'Max', age: 40, gender: 'male', exp: 11 }},
+//     car5 = {model: 'Toyota', year: 2010, power: 500, color: 'yellow', driver:{name: 'Andriy', age: 30, gender: 'male', exp: 5 }},
+//     car6 = {model: 'Nissan', year: 2020, power: 100, color: 'red', driver:{name: 'Roman', age: 34, gender: 'male', exp: 14 }},
+//     car7 = {model: 'Mazda', year: 2015, power: 120, color: 'purple', driver:{name: 'Karina', age: 25, gender: 'female', exp: 8 }},
+//     car8 = {model: 'SEAT', year: 2018, power: 800, color: 'white', driver:{name: 'John', age: 21, gender: 'male', exp: 20 }},
+//     car9 = {model: 'Porsche', year: 2019, power: 430, color: 'cream', driver:{name: 'Maria', age: 55, gender: 'female', exp: 3 }},
+//     car10 = {model: 'Infiniti', year: 2012, power: 480, color: 'green', driver:{name: 'Ben', age: 23, gender: 'male', exp: 1 }},
+// ]
+
+// 8 - проитерировать каждый массив из задания 5,6,7 при помощи while.
+
+// let i=0;
+// while (i < cars.length) {
+//     console.log(cars[i]);
+//     i++
+// }
+// i=0
+// while (i < cities.length) {
+//     console.log(cities[i]);
+//     i++
+// }
+// i=0
+// while (i < cars1.length) {
+//     console.log(cars1[i]);
+//     i++
+// }
+
+// 9 - проитерировать каждый массив из задания 5,6,7 при помощи for .
+
+// for (let i = 0; i < cars.length; i++) {
+//     console.log(cars[i]);
+// }
+// for (let i = 0; i < cities.length; i++) {
+//     console.log(cities[i]);
+// }
+// for (let i = 0; i < cars1.length; i++) {
+//     console.log(cars1[i]);
+// }
+
+// 10 - проитерировать каждый массив из задания 5,6,7 при помощи  for of.
+
+// for (const car of cars) {
+//     console.log(car);
+// }
+// for (const city of cities) {
+//     console.log(city);
+// }
+// for (const cars1Element of cars1) {
+//     console.log(cars1Element);
+// }
+
+// 11 - взять объекты из задания 1 и превратить каждый в json.
+// 12 - взять json из задания 11 и превратить их обратно в объекты.
+
+// let workerjs = JSON.stringify(worker);
+// let teacherjs = JSON.stringify(teacher);
+// let applejs = JSON.stringify(apple);
+// let universityjs = JSON.stringify(university);
+// let studentjs = JSON.stringify(student);
 //
-// - За допомогою 2х циклів циклів проітеррувати  даний масив і масив кожного об'єкта.
+// let workerP=JSON.parse(workerjs);
+// let teacherP=JSON.parse(teacherjs);
+// let appleP=JSON.parse(applejs);
+// let universityP=JSON.parse(universityjs);
+// let studentP=JSON.parse(studentjs);
+
+// 13 - взять массив из задания 5,в цикле перебрать его объекты превратив их в json .
+
+// for (let i = 0; i < cars.length; i++) {
+//     cars[i]=JSON.stringify(cars[i])
+// }
+// console.log(cars);
+
+// 14 - взять массив из задания 6,в цикле перебрать его объекты превратив их в json .
+
+// for (let i = 0; i < cities.length; i++) {
+//     cities[i]=JSON.stringify(cities[i])
+// }
+// console.log(cities);
+
+// 15 - взять массив из задания 7,в цикле перебрать его объекты превратив их в json и сразу скоприовать в новый массив.
+// let newcars1=[];
+// for (let i = 0; i < cars1.length; i++) {
+//     newcars1.push(JSON.stringify(cars1[i]))
+// }
+// console.log(newcars1);
+
+// 16 - Создать массив пользователей. У каждого пользователя обязательно должено быть поле skills которое является массивом. Проитерировать массив пользователей и в каждом пользователе проитерировать его массив skills
+// 17 - Создать массив пользователей. У каждого пользователя обязательно должено быть поле skills которое является массивом. Проитерировать массив пользователей и в каждом пользователе проитерировать его массив skills. Скопировать все skills всех пользователей в отедльный массив
+
+//  let users = [
+//     {
+//         name: 'vasya',
+//         age: 31,
+//         skills: ['java', 'js']
+//     },
+//     {
+//         name: 'petya',
+//         age: 30,
+//         skills: ['java', 'js', 'html']
+//     },
+//     {
+//         name: 'kolya',
+//         age: 29,
+//         skills: ['mysql', ',mongo']
+//     }
+// ]
+
+// 16
+// for (const user of users) {
+//     console.log(user);
+//     for (const skill of user.skills) {
+//         console.log(skill);
+//     }
+// }
+
+// 17
+// let skills=[];
+// for (const user of users) {
+//     console.log(user);
+//     skills.push(user.skills)
+//
+// }
+// console.log(skills);
+
+//
+// 19 - За допомогою 2х циклів циклів проітеррувати  даний масив і масив кожного об'єкта.
+
 // let users = [
 //     {
 //         name: 'vasya',
@@ -167,13 +317,14 @@ let developer = {
 //         status: true,
 //         skills: ['mysql', ',mongo']
 //     }];
-//
+
 // for (const user of users) {
 //     console.log(user);
 //     for (const skill of user.skills) {
 //         console.log(skill);
 //     }
 // }
+
 
 let users = [{
     name: 'vasya',
@@ -232,50 +383,182 @@ let users = [{
     address: {city: 'Cairo', country: 'Egypt', street: 'Seashore', houseNumber: 45}
 }];
 
-// - З масиву users за допомогою циклу витягнути адреси користувачів і записати (скопіювати) їх в інший порожній масив.
-let addresses = [];
-for (const user of users) {
-    addresses.push(user.address.country, user.address.city, user.address.street, user.address.houseNumber)
-}
-console.log(addresses);
+// 24 - З масиву users за допомогою циклу витягнути адреси користувачів і записати (скопіювати) їх в інший порожній масив.
+// let addresses = [];
+// for (const user of users) {
+//     addresses.push(user.address.country, user.address.city, user.address.street, user.address.houseNumber)
+// }
+// console.log(addresses);
 
-// - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement. Всі данні в одному блоці.
-for (const user of users) {
-    let userDiv = document.createElement("div");
-    userDiv.innerText=`${user.name} ${user.age} ${user.status} ${user.address.country} ${user.address.city} ${user.address.street} ${user.address.houseNumber}`;
-    document.body.appendChild(userDiv)
-}
+// 25 - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement. Всі данні в одному блоці.
+// for (const user of users) {
+//     let userDiv = document.createElement("div");
+//     userDiv.innerText = `${user.name} ${user.age} ${user.status} ${user.address.country} ${user.address.city} ${user.address.street} ${user.address.houseNumber}`;
+//     document.body.appendChild(userDiv)
+// }
 
-// - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement, розділивши всі властивості по своїм блокам (div>div*4)
-// - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement, розділивши всі властивості по своїм блокам , блок з адресою зробити окремим блоком, з блоками для кожної властивості
+// 26 - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement, розділивши всі властивості по своїм блокам (div>div*4)
+
+// for (const user of users) {
+//     let outerDiv = document.createElement("div");
+//     for (const userKey in user) {
+//         let keyDiv = document.createElement('div')
+//         keyDiv.innerText = `${user[userKey]}`
+//         outerDiv.appendChild(keyDiv)
+//     }
+//     document.body.appendChild(outerDiv)
+// }
+
+
+// 27 - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement, розділивши всі властивості по своїм блокам , блок з адресою зробити окремим блоком, з блоками для кожної властивості
+
+// for (const user of users) {
+//     let outerDiv = document.createElement("div");
+//     for (const userKey in user) {
+//         if (typeof user[userKey] !== 'object') {
+//             let keyDiv = document.createElement('div');
+//             keyDiv.innerText = `${user[userKey]}`;
+//             outerDiv.appendChild(keyDiv);
+//         }else {
+//             let addDiv= document.createElement('div');
+//
+//             for (const addressKey in user.address) {
+//                 let addressDiv =document.createElement('div');
+//                 addressDiv.innerText=`${user.address[addressKey]}`;
+//                 addDiv.appendChild(addressDiv)
+//             }
+//             outerDiv.appendChild(addDiv);
+//         }
+//     }
+//     document.body.appendChild(outerDiv)
+// }
+//
+// ^ не впевнений чи правильно зробив - хоча результат правильний
+
 
 //
-// - Дано 2 масиви з рівною кількістю об'єктів.
+// 87 - Дано 2 масиви з рівною кількістю об'єктів.
 // Масиви:
-//     let usersWithId = [{id: 1, name: 'vasya', age: 31, status: false}, {id: 2, name: 'petya', age: 30, status: true}, {id: 3, name: 'kolya', age: 29, status: true}, {id: 4, name: 'olya', age: 28, status: false},];
-// let citiesWithId = [{user_id: 3, country: 'USA', city: 'Portland'}, {user_id: 1, country: 'Ukraine', city: 'Ternopil'}, {user_id: 2, country: 'Poland', city: 'Krakow'}, {user_id: 4, country: 'USA', city: 'Miami'},];
+//     let usersWithId = [
+//         {id: 1, name: 'vasya', age: 31, status: false},
+//         {id: 2, name: 'petya', age: 30, status: true},
+//         {id: 3, name: 'kolya', age: 29, status: true},
+//         {id: 4, name: 'olya', age: 28, status: false},
+//     ];
+//     let citiesWithId = [
+//         {user_id: 3, country: 'USA', city: 'Portland'},
+//         {user_id: 1, country: 'Ukraine', city: 'Ternopil'},
+//         {user_id: 2, country: 'Poland', city: 'Krakow'},
+//         {user_id: 4, country: 'USA', city: 'Miami'},
+//     ];
 // З'єднати в один об'єкт користувача та місто з відповідними "id" та "user_id" .
-//     Записати цей об'єкт в новий масив
+// Записати цей об'єкт в новий масив
 // Частковий приклад реультату:
 //     let usersWithCities = [{id: 1, name: 'vasya', age: 31, status: false, address: {user_id: 1, country: 'Ukraine', city: 'Ternopil'}}....]
 //
+
+// for (let i = 0; i < usersWithId.length; i++) {
+//     for (let j = 0; j < citiesWithId.length; j++) {
+//         if (usersWithId[i].id===citiesWithId[j].user_id) {
+//             usersWithId[i].address=citiesWithId[j]
+//         }
+//     }
+// }
+// console.log(usersWithId);
+
+
 //
 //
 //
+// 100 - створити розмітці блок з id, class та текстом в середені. Зчитати окремо цей текст з селекторів по id , class та тегу
+
+// let divId = document.getElementById('pointer');
+// console.log(divId.innerText);
 //
-// - створити розмітці блок з id, class та текстом в середені. Зчитати окремо цей текст з селекторів по id , class та тегу
-// - змінити цей текст використовуючи селектори id, class,  tag
-// - змінити висоту та ширину блоку використовуючи селектори id, class,  tag
-// - за допомоги document.createElement та appendChild створити таблицю на 1 рядок з трьома ячейками всередені
-// - за допомоги document.createElement, appendChild та циклу створити таблицю на 10 рядків з трьома ячейками всередені
-// - за допомоги document.createElement, appendChild та 2х циклів створити таблицю на 10 рядків з 5 ячейками всередені
-// - за допомоги document.createElement, appendChild та 2х циклів створити таблицю на n рядків з m ячейками всередені. n та m отримати з prompt
+// let divClass = document.getElementsByClassName('text')
+// for (const divclass1 of divClass) {
+//     console.log(divclass1.innerText);
+// }
 //
-// --Завантажити з мережі будь-який шаблон сайту. Підключити до нього свій скріпт-файл. У файлі прописати наступні доступи та дії
-// - знайти всі елементі, які мають class
-// - знайти всі параграфи ,та змінити текст на hello oktenweb!
-//     - знайти всі div та змінити ім колір на червоний
+// let divTag = document.getElementsByTagName('div')
+// for (const divTagElement of divTag) {
+//     console.log(divTagElement.innerText);
+// }
+
+// 101 - змінити цей текст використовуючи селектори id, class,  tag
+
+// document.getElementById('pointer').innerText = 'змінити цей текст використовуючи селектори id';
+
+// for (const i of document.getElementsByClassName('text')) {
+//         i.innerText='змінити цей текст використовуючи селектори class'
+// }
+
+// document.getElementsByTagName('div')[0].innerText = 'змінити цей текст використовуючи селектори div';
+
+
+// 102 - змінити висоту та ширину блоку використовуючи селектори id, class,  tag
+
+// let divId = document.getElementById('pointer');
+// divId.style.width = '500px';
+// divId.style.height = '500px';
+
+// for (const i of document.getElementsByClassName('text')) {
+//     i.style.height = '500px';
+//     i.style.width = '500px';
+// }
 //
+// for (const i of document.getElementsByTagName('div')) {
+//     i.style.height = '500px';
+//     i.style.width = '500px';
+// }
+
+// 103 - за допомоги document.createElement та appendChild створити таблицю на 1 рядок з трьома ячейками всередені
+
+// let table = document.createElement('div');
+// table.style.border = '2px solid black';
+// table.style.backgroundColor='silver';
+// table.style.height='fit-content';
+// table.style.width='fit-content';
+// for (let i = 0; i < 3; i++) {
+//     let cell = document.createElement('div');
+//     cell.style.height = '40px';
+//     cell.style.width = '90px';
+//     cell.style.border = '1px solid black';
+//     cell.style.display='inline-block';
+//     table.appendChild(cell)
+// }
+// document.body.appendChild(table)
+
+// 104 - за допомоги document.createElement, appendChild та циклу створити таблицю на 10 рядків з трьома ячейками всередені
+
+let table = document.createElement('div');
+table.style.border = '2px solid black';
+table.style.backgroundColor='silver';
+table.style.height='fit-content';
+table.style.width='fit-content';
+
+for (let i = 0; i < 3; i++) {
+    let cell = document.createElement('div');
+    cell.style.height = '40px';
+    cell.style.width = '90px';
+    cell.style.border = '1px solid black';
+    cell.style.display='inline-block';
+    table.appendChild(cell)
+}
+document.body.appendChild(table)
+
+
+
+// 105 - за допомоги document.createElement, appendChild та 2х циклів створити таблицю на 10 рядків з 5 ячейками всередені
+// 106 - за допомоги document.createElement, appendChild та 2х циклів створити таблицю на n рядків з m ячейками всередені. n та m отримати з prompt
+//
+// 108 - Завантажити з мережі будь-який шаблон сайту. Підключити до нього свій скріпт-файл. У файлі прописати наступні доступи та дії
+// 109 - знайти всі елементі, які мають class
+// 110 - знайти всі параграфи ,та змінити текст на hello oktenweb!
+// 111 - знайти всі div та змінити ім колір на червоний
+//
+
+
 // ============
 // ====class===
 //     ============
