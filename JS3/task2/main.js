@@ -467,9 +467,7 @@ let users = [{
 // console.log(usersWithId);
 
 
-//
-//
-//
+
 // 100 - створити розмітці блок з id, class та текстом в середені. Зчитати окремо цей текст з селекторів по id , class та тегу
 
 // let divId = document.getElementById('pointer');
@@ -531,21 +529,24 @@ let users = [{
 
 // 104 - за допомоги document.createElement, appendChild та циклу створити таблицю на 10 рядків з трьома ячейками всередені
 
-let table = document.createElement('div');
-table.style.border = '2px solid black';
-table.style.backgroundColor='silver';
-table.style.height='fit-content';
-table.style.width='fit-content';
+// let table = document.createElement('div');
+// table.style.border = '2px solid black';
+// table.style.backgroundColor='silver';
+// table.style.height='fit-content';
+// table.style.width='fit-content';
+//
+// for (let i = 0; i < 3; i++) {
+//     let cell = document.createElement('div');
+//     cell.style.height = '40px';
+//     cell.style.width = '90px';
+//     cell.style.border = '1px solid black';
+//     cell.style.display='inline-block';
+//     table.appendChild(cell)
+// }
+// document.body.appendChild(table)
 
-for (let i = 0; i < 3; i++) {
-    let cell = document.createElement('div');
-    cell.style.height = '40px';
-    cell.style.width = '90px';
-    cell.style.border = '1px solid black';
-    cell.style.display='inline-block';
-    table.appendChild(cell)
-}
-document.body.appendChild(table)
+// ^ це я пробував просто DIVами зробити табличку
+
 
 // 105 - за допомоги document.createElement, appendChild та 2х циклів створити таблицю на 10 рядків з 5 ячейками всередені
 
@@ -643,11 +644,17 @@ let rules = [
 //     При цому в блоці, номер правила записати в свій блок, текст правила записати в свій окремий блок.
 //     Результатом відпрацювання скріпта повинна бути структура яка міститься в блоці wrap файла rule.html
 
-for (const rule of rules) {
-    let div = document.createElement('div')
-
-    document.body.appendChild(div)
-}
+// for (let i = 0; i < rules.length; i++) {
+//     let div = document.createElement('div');
+//     div.classList.add('rules', `rule${i}`);
+//         let ruleNum = document.createElement('h2');
+//         ruleNum.innerText = rules[i].title;
+//         div.appendChild(ruleNum);
+//         let ruleTxt = document.createElement('p');
+//         ruleTxt.innerText = rules[i].body;
+//         div.appendChild(ruleTxt);
+//     document.body.appendChild(div)
+// }
 
 
 //
