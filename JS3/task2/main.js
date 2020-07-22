@@ -590,8 +590,30 @@ let users = [{
 
 
 // 109 - знайти всі елементі, які мають class
+
+// let classes = document.body.getElementsByTagName('*');
+// // console.log(classes);
+// for (const class1 of classes) {
+//     if (class1.className) {
+//         console.log(class1);
+//     }
+// }
+
 // 110 - знайти всі параграфи ,та змінити текст на hello oktenweb!
+
+// let para = document.getElementsByTagName('p');
+// for (const paraElement of para) {
+//     paraElement.innerText = 'hello oktenweb';
+// }
+
 // 111 - знайти всі div та змінити ім колір на червоний
+
+// let divs = document.getElementsByTagName('div');
+// for (const div of divs) {
+//     div.style.backgroundColor = 'red';
+// }
+
+
 //
 
 
@@ -602,6 +624,18 @@ let users = [{
 //     - є сторінка rules.html. Контентом сторінки є заголовки та параграфи. Заголовки (h2) характеризують тему контенту яка вказана в параграфі.
 //     створити скрипт, котрий зчитує всі заголовки, та робить в блоці з id=content з них список(ul>li), який буде змістом того, що знаходиться на сторінці.
 //     Скріпт повинен працювати навіть якщо кількість блоків з заголовком та параграфом зміниться.
+
+
+// let headers = document.getElementsByTagName('h2');
+// let content = document.getElementById('content');
+// let ul=document.createElement('ul');
+// for (const header of headers) {
+//     let li = document.createElement('li');
+//     li.innerText = header.innerText;
+//     ul.appendChild(li);
+// }
+// content.appendChild(ul);
+
 //
 
 let rules = [
