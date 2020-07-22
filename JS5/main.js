@@ -328,11 +328,12 @@
 //     this.searchForCinderella = function(array){
 //         for (const elem of array) {
 //             if (elem.feet===prince.shoe) {
-//                 console.log(elem.name)
+//                 console.log(elem.name);
+//                 break;
 //             }
 //         }
 //     }
 // }
 //
-// let prince = new Prince('Anton', 28, 39)
+// let prince = new Prince('Anton', 28, 35)
 // prince.searchForCinderella(cinder)

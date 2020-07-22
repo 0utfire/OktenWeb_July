@@ -90,14 +90,14 @@ let users = [
 // - пройтись по ньому та додати кожному юзеру поле id - яке характеризує унікальний індентифікатор (По якому принципу його створювати - ваше рішення), та зберегти це в новий масив (первинний масив залишиться без змін)
 
 // let newUsers = users.forEach(user => user.id = '');
-let i = 1;
-let newUsers = [];
-users.forEach(function (user) {
-    // user.id = i;
-    // i++;
-    user.id = Math.floor(Math.random() * 100)
-    newUsers.push(user)
-});
+// // let i = 1;
+// let newUsers = [];
+// users.forEach(function (user) {
+//     // user.id = i;
+//     // i++;
+//     user.id = Math.floor(Math.random() * 100)
+//     newUsers.push(user)
+// });
 // console.log(newUsers);
 
 // - відсортувати його за індентифікатором
@@ -117,7 +117,6 @@ users.forEach(function (user) {
 // cal(5, 6, '+',result => {
 //
 // })
-
 
 
 // -- наисать функцию калькулятора с 3мя числами и колбеком
