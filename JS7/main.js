@@ -46,19 +46,19 @@
 // document.body.appendChild(label);
 // document.body.appendChild(select);
 
-let button = document.createElement('button');
-button.innerText='Show/hide';
-let ul= document.createElement('ul');
-for (let i = 0; i < 3; i++) {
-    let li = document.createElement('li')
-    li.innerText= `Option ${i + 1}`;
-
-}
-button.onclick = () => {
-
-}
-document.body.appendChild(ul);
-document.body.appendChild(button);
+// let btn = document.createElement('button');
+// btn.innerText='Show/hide';
+// let ul= document.createElement('ul');
+// for (let i = 0; i < 3; i++) {
+//     let li = document.createElement('li')
+//     li.innerText= `Option ${i + 1}`;
+//     ul.appendChild(li)
+// }
+// btn.onclick = () => {
+//     ul.style.display = (ul.style.display === 'none') ? '' : 'none'
+// }
+// document.body.appendChild(btn);
+// document.body.appendChild(ul);
 
 
 
@@ -67,21 +67,123 @@ document.body.appendChild(button);
 //     Вывести список комментариев в документ, каждый в своем блоке.
 //     Добавьте каждому комментарию по кнопке для сворачивания его body.
 //
+// let comments = [
+//     {title: 'lorem', body: 'lorem ipsum dolo sit ameti'},
+//     {title: 'lorem1', body: 'lorem ipsum dolo sit ameti'},
+//     {title: 'lorem2', body: 'lorem ipsum dolo sit ameti'},
+//     {title: 'lorem3', body: 'lorem ipsum dolo sit ameti'},
+//     {title: 'lorem4', body: 'lorem ipsum dolo sit ameti'},
+//     {title: 'lorem5', body: 'lorem ipsum dolo sit ameti'},
+//     {title: 'lorem6', body: 'lorem ipsum dolo sit ameti'},
+// ]
+//
+// let wrapper = document.createElement('div');
+// for (const comment of comments) {
+//     let commDiv = document.createElement('div');
+//     let title = document.createElement('h2');
+//     title.innerText = comment.title;
+//     title.style.display = 'inline-block';
+//     title.style.paddingRight = '5px';
+//     let btn = document.createElement('button');
+//     btn.innerText = '+';
+//     btn.style.display = 'inline-block';
+//     let body = document.createElement('div');
+//     body.style.display = 'none';
+//     body.innerText = comment.body;
+//     btn.onclick = () => {
+//         if (body.style.display === 'none') {
+//             body.style.display = '';
+//             btn.innerText = '-';
+//         } else {
+//             body.style.display = 'none';
+//             btn.innerText = '+';
+//
+//         }}
+//     commDiv.appendChild(title);
+//     commDiv.appendChild(btn);
+//     commDiv.appendChild(body);
+//     wrapper.appendChild(commDiv)
+// }
+// document.body.appendChild(wrapper);
+
+//
 // - створити 2 форми  по 2 інпути в кожній. ствоирити кнопку при кліку на яку считується та виводиться на консоль інформація з цих 2х форм.
 //     Кнопка повинна лежати за межами форм (Щоб ьуникнути  перезавантаження сторінки)
 // Доступ до інпутів через Forms API. Отже дайте формі та інпутам всі необхідні атрибути.
-//
+
+
+
+
+
+
 // - Створити функцію, яка генерує таблицю.
 //     Перший аргумент визначає кількість строк.
 //     Другий параметр визначає кліькіть ячеєк в кожній строці.
 //     Третій параметр визначає елемент в який потрібно таблицю додати.
+
+
+// function tableGen(rows, columns, element) {
+//     let elem = document.createElement(element);
+//     let table = document.createElement("table");
+//     table.style.border = 'ipx solid black';
+//     for (let i = 0; i < rows; i++) {
+//         let row = document.createElement("tr");
+//         for (let j = 0; j < columns; j++) {
+//             let column = document.createElement("td");
+//             column.style.height = '20px';
+//             column.style.width = '40px';
+//             column.style.border = '1px solid black';
+//             row.appendChild(column);
+//         }
+//         table.appendChild(row);
+//     }
+//
+//     elem.appendChild(table);
+//     document.body.appendChild(elem);
+// }
+//
+// tableGen(4,8, 'p');
+
 //
 //
 // - Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
+
+// let inputRow = document.createElement("input");
+// let inputCell = document.createElement("input");
+// let inputValue = document.createElement("input");
+// let btn = document.createElement('button');
+// btn.innerText = 'SAVE';
+//
+// document.body.appendChild(inputRow);
+// document.body.appendChild(inputCell);
+// document.body.appendChild(inputValue);
+// document.body.appendChild(btn);
+//
+// btn.onclick = () => {
+//     let table = document.createElement('table');
+//     for (let i = 0; i < +inputRow.value; i++) {
+//         let row = document.createElement("tr");
+//         for (let j = 0; j < +inputCell.value; j++) {
+//             let column = document.createElement("td");
+//             column.style.height = '20px';
+//             column.style.width = '40px';
+//             column.style.border = '1px solid black';
+//             column.innerText = inputValue.value;
+//             row.appendChild(column);
+//         }
+//         table.appendChild(row);
+//     }
+//     document.body.appendChild(table);
+//
+// }
+
 // (Додатковачастина для завдання)
 //
 // - Напишите «Карусель» – ленту изображений, которую можно листать влево-вправо нажатием на стрелочки.
+
+
+
 //
 //
 // - Сворити масив не цензцрних слів.
@@ -89,6 +191,21 @@ document.body.appendChild(button);
 //     Якщо людина вводить слово і воно міститься в масиві не цензурних слів
 // кинути алерт з попередженням.
 //     Перевірку робити при натисканні на кнопку
+
+// let censored = ['shit', 'piss', 'cunt', 'fuck', 'cocksucker', 'tits', 'motherfucker'];
+// let input = document.createElement('input');
+// input.type='text';
+// document.body.appendChild(input);
+// let btn = document.createElement('button');
+// btn.innerText = 'Check word';
+// document.body.appendChild(btn);
+// btn.onclick = () => {
+//     if (censored.includes(input.value)) {
+//         alert('This word is censored')
+//     }
+// }
+
+
 //
 //
 // - Сворити масив не цензцрних слів.
@@ -96,11 +213,30 @@ document.body.appendChild(button);
 //     Потрібно перевіряти чи не містить ціле речення в собі погані слова.
 //     Кинути алерт з попередженням у випадку якщо містить.
 //     Перевірку робити при натисканні на кнопку
-//
-//
+
+// let censored = ['shit', 'piss', 'cunt', 'fuck', 'cocksucker', 'tits', 'motherfucker'];
+// let input = document.createElement('input');
+// input.type='text';
+// document.body.appendChild(input);
+// let btn = document.createElement('button');
+// btn.innerText = 'Check word';
+// document.body.appendChild(btn);
+// btn.onclick = () => {
+//     for (const word of input.value.split(/\.|\s/g)) {
+//         console.log(word);
+//         if (censored.includes(word)) {
+//             alert(`Word ${word} is censored`)
+//         }
+//     }
+// }
+
 //
 // -- создать скрипт, который берет считывает на странице (rules.html) текст и делает сбоку меню-оглавление по всем заголовкам которые есть в тексте.
 //     При клике на пункт оглавления вы должны отправляться к этому пункту в тексте
+
+
+
+
 //
 // -- взять массив пользователей
 // let usersWithAddress = [
