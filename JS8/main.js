@@ -54,35 +54,55 @@
 // Требование : хранить историю своих изменений (даже после перезагрузки страницы).
 // Сверху над текстареа должны появится стрелочки, с помощью которых можно перемещаться по истории (не забудьте!чекпоинт истории - нажатеи кнопки сохранить).
 
-
-let myform1 = document.createElement('form');
-myform1.name = 'my_form';
-let textarea = document.createElement('input');
-textarea.name = 'input';
-textarea.type = 'text';
-textarea.style.width = '300px';
-textarea.style.height = '200px';
-myform1.appendChild(textarea);
-document.body.appendChild(myform1);
-
-let btn = document.createElement("button");
-btn.innerText = 'SAVE';
-i=0;
-btn.onclick = () => {
-    localStorage.setItem(i, textarea.value);
-    i++;
-}
-let prev = document.createElement("button");
-prev.innerText = 'Previous';
-let next = document.createElement("button");
-next.innerText = 'Next';
-
-prev.onclick = 
-
-
-document.body.appendChild(btn);
-document.body.appendChild(prev);
-document.body.appendChild(next);
+//
+// let myform1 = document.createElement('form');
+// myform1.name = 'my_form';
+// let textarea = document.createElement('input');
+// textarea.name = 'input';
+// textarea.type = 'text';
+// textarea.style.width = '300px';
+// textarea.style.height = '200px';
+// myform1.appendChild(textarea);
+// document.body.appendChild(myform1);
+//
+// let btn = document.createElement("button");
+// btn.innerText = 'SAVE';
+// let step = localStorage.length;
+// // let i = step + '';
+// textarea.value = localStorage.getItem(step -1)
+//
+//
+// btn.onclick = () => {
+//     localStorage.setItem(localStorage.length.toString(), textarea.value);
+//     console.log(localStorage.length);
+// }
+//
+// let prev = document.createElement("button");
+// prev.innerText = 'Previous';
+// prev.onclick = () => {
+//     if (step === 0) {
+//
+//         textarea.value = localStorage.getItem(step)
+//     } else {
+//         step -= 1;
+//         textarea.value = localStorage.getItem(step)
+//     }
+// };
+//
+// let next = document.createElement("button");
+// next.innerText = 'Next';
+// next.onclick = () => {
+//     if (step === localStorage.length-1) {
+//         textarea.value = localStorage.getItem(step)
+//     } else {
+//         step += 1;
+//         textarea.value = localStorage.getItem(step)
+//     }
+// };
+//
+// document.body.appendChild(btn);
+// document.body.appendChild(prev);
+// document.body.appendChild(next);
 
 // textarea.value = localStorage.getItem('text');
 // textarea.oninput = (ev) => {
