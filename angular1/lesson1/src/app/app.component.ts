@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
-import {UserService} from './services/user.service';
-import {UserModel} from './models/user.model';
+import {TodoListService} from './services/todo-list.service';
 
 @Component({
   selector: 'app-root',
@@ -8,15 +7,15 @@ import {UserModel} from './models/user.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-  constructor(private UserService: UserService) {
-    this.UserService.getUsers().subscribe(users => {
-      console.log(users);
-      this.users = users;
-    })
+  constructor(private todoListService: TodoListService) {
   }
-
   title = 'lesson1';
-  users: UserModel[] = [];
+  // newTodo: string;
+  todos = [];
+
+
+
+
+
 
 }

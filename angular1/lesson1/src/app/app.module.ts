@@ -3,16 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http';
+import { AllTodosComponent } from './components/all-todos/all-todos.component';
+import { AddTodoComponent } from './components/add-todo/add-todo.component';
+import { RemovoeTodoComponent } from './components/removoe-todo/removoe-todo.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AllTodosComponent,
+    AddTodoComponent,
+    RemovoeTodoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

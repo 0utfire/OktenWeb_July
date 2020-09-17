@@ -1,7 +1,19 @@
-<div *ngFor="let user of users">
-  ID: {{ user.id }} <br>
-  EMAIL: {{ user.email }}<br>
-  NAME: {{ user.name }}<br>
-  PHONE: {{ user.phone }}<br>
-  <hr>
-</div>
+<!--<div *ngFor="let user of users">-->
+<!--  ID: {{ user.id }} <br>-->
+<!--  EMAIL: {{ user.email }}<br>-->
+<!--  NAME: {{ user.name }}<br>-->
+<!--  PHONE: {{ user.phone }}<br>-->
+<!--  <hr>-->
+<!--</div>-->
+
+<a routerLink="addtodo">Add new ToDo</a>
+<br>
+<a routerLink="removetodo">Remove ToDo</a>
+<br>
+<a routerLink="alltodo">Show all ToDos</a>
+<br>
+<br>
+<router-outlet></router-outlet>
+
+
+
