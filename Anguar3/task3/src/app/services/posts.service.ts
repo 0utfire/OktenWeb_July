@@ -7,10 +7,7 @@ import {User} from '../models/user';
   providedIn: 'root'
 })
 export class PostsService {
-
-  constructor(private http: HttpClient) {
-
-  }
+  constructor(private http: HttpClient) {  }
 
   getAllPosts(): Observable<any[]> {
     return this.http.get<any[]>('https://jsonplaceholder.typicode.com/posts');

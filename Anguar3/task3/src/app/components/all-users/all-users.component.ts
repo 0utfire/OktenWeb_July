@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {User} from '../../models/user';
 import {UserService} from '../../services/user.service';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-all-users',
@@ -8,11 +9,10 @@ import {UserService} from '../../services/user.service';
   styleUrls: ['./all-users.component.css']
 })
 export class AllUsersComponent {
+  userList: User[] = [];
 
-  UserList: User[] = [];
-
-  constructor(private userService: UserService) {
-    this.userService.getAllUsers().subscribe(value => this.UserList = value);
+  constructor(private activatedRoute: ActivatedRoute) {
+    this.activatedRoute.data.subscribe(value => this.userList = value.allUsers);
   }
 
 }
