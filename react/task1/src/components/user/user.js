@@ -18,7 +18,7 @@ class User extends Component {
     constructor(props) {
         super(props);
     }
-    action   = (singleUser) => {
+    action = (singleUser) => {
         singleUser.status = !singleUser.status;
         this.setState({status: this.props.singleUser.status});
     }
