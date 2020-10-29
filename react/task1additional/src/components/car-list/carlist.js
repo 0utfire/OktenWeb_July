@@ -3,13 +3,17 @@ import {carsList} from "../../data/data";
 import Car from "../car/car";
 
 class Carlist extends Component {
-    state = {carsList1: carsList}
-
-    constructor(props) {
-        super(props);
+    state = {
+        carsArray: [...carsList]
     }
 
-    action = (carsList) => {
+
+    // constructor(props) {
+    //     super(props);
+    // }
+
+    action = () => {
+        const carsList = this.state.carsArray;
         let currentIndex = carsList.length, temporaryValue, randomIndex;
         while (0 !== currentIndex) {
             randomIndex = Math.floor(Math.random() * currentIndex);
@@ -18,20 +22,21 @@ class Carlist extends Component {
             carsList[currentIndex] = carsList[randomIndex];
             carsList[randomIndex] = temporaryValue;
         }
-        this.setState({carsList1: carsList})
+        this.setState({carsArray: carsList})
     }
 
     render() {
+        console.log('.');
         return (
             <div>
                 {
-                    carsList.map((car, index) => {
+                    this.state.carsArray.map((car) => {
                         return (
-                            <Car someCar={car} key={index}/>
+                            <Car someCar={car} key={car.producer}/>
                         )
                     })
                 }
-                <button onClick={() => {return this.action(carsList)}}>Shuffle</button>
+                <button onClick={() => this.action()}>Shuffle</button>
 
             </div>
         );
