@@ -13,7 +13,7 @@ export class PostsService {
     return this.http.get<any[]>('https://jsonplaceholder.typicode.com/posts');
   }
 
-  // getPostsByID(): Observable<User[]> {
-  //   return this.http.get<any[]>(`http://jsonplaceholder.typicode.com/posts?userId=${id}`);
-  // }
+  getPostsByID(id): Observable<any[]> {
+    return this.http.get<any[]>(`http://jsonplaceholder.typicode.com/posts?userId=${id}`);
+  }
 }

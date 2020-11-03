@@ -35,8 +35,9 @@ import {UserByIdResolveService} from './services/user-by-id-resolve.service';
     RouterModule.forRoot([
       {path: 'users', component: AllUsersComponent, resolve: {allUsers: UserResolveService},
       children: [
-        {path: 'details/:id', resolve: {oneUser: UserByIdResolveService},  component: UserDetailsComponent}
-      ]},
+        {path: 'details/:id', resolve: {oneUser: UserByIdResolveService},  component: UserDetailsComponent},
+        {path: ':id/posts', component: PostComponent},
+        ]},
       {path: 'posts', component: PostsComponent, resolve: {allPosts: PostResolveService}},
       {path: 'comments', component: CommentsComponent}
       ]

@@ -3,5 +3,9 @@
   {{user.name}}
   {{user.username}}
   <button [routerLink]="['details', user.id]">Details</button>
+<!--  <button [routerLink]="[user.id,'posts']"-->
+<!--          [queryParams]="{userId: user.id}">-->
+<!--          Show all posts</button>-->
+  <button [routerLink]="[user.id,'posts']">Show all posts</button>
   <hr>
 </div>
