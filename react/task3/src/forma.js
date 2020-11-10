@@ -9,7 +9,7 @@ class Forma extends Component {
 
     constructor(props) {
         super(props);
-        this.name = React.createRef
+        this.id = React.createRef
     }
 
     async showUser(id) {
@@ -29,7 +29,7 @@ class Forma extends Component {
     }
 
     // actionX = (e)=> {
-    //     // console.log(this.name.current.value);
+    //      R// console.log(this.name.current.value);
     //     console.log(this.name.value);
     // }
 }
