@@ -1,14 +1,12 @@
 import React, {useEffect, useState} from "react";
-import {IdContext} from "../contextservice";
-import PostList from "./postslist";
 import {withRouter} from "react-router";
 
 
 
 function User (props) {
     const id = props.match.params.id
+    const [user,setUser] = useState(null);
 
-    const [user,setUser] = useState(null)
 
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/users/' + id)
@@ -16,18 +14,15 @@ function User (props) {
             .then(user => setUser(user))
     })
 
-
     const GoToUserlist = () => {
         props.history.push({
             pathname:'/users'
         })
-
     }
 
     return (
-        <IdContext.Provider value={id}>
         <div>
-            {/*<button onClick={GoToUserlist}>Go to Userlist</button>*/}
+            <button onClick={GoToUserlist}>Go to Userlist</button>
             {
                 user && (
                     <div>
@@ -35,13 +30,12 @@ function User (props) {
                         <p>{user.name}</p>
                         <p>{user.email}</p>
                         <button onClick={() => props.history.push(`/users/${user.id}/posts`)}>Show posts</button>
+                        <button onClick={() => props.history.push(`/users/${user.id}/comments`)}>Show comments</button>
                         <hr/>
-                        <PostList/>
                     </div>
                 )
             }
         </div>
-        </IdContext.Provider>
     );
 
 }

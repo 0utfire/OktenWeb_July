@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
+import {withRouter} from "react-router";
 
-export default function Userlist (props) {
+function Userlist (props) {
     let [users, setUsers] = useState([])
 
     useEffect(() => {
@@ -18,20 +19,25 @@ export default function Userlist (props) {
 
     };
 
+   const  showUser = (user) => {
+       props.saveUserId(user.id)
+       props.history.push(`/users/${user.id}`);
+   }
+
     return (
         <div>
-            <button onClick={GoToHome}>Home</button>
+            {/*<button onClick={GoToHome}>Home</button><hr/>*/}
             {
                 users.map(user => (
                     <div key={user.id}>
                         <div>{user.name}</div>
-                        <button onClick={() => props.history.push(`/users/${user.id}`)}>Show user</button>
+                        <button onClick={() => showUser(user)}>Show user</button>
                         <hr/>
                     </div>
                 ))
             }
         </div>
     )
-
-
 }
+
+export default withRouter(Userlist)
